@@ -1,0 +1,20 @@
+<header>
+  <div class="logo">
+    <img [src]="angularLogo">
+  </div>
+  <nav>
+    <h1>Angular 2.0 Examples</h1>
+    <ul>
+      <li router-active>
+        <a [routerLink]=" ['Index'] ">Index</a>
+      </li>
+        <li router-active>
+          <a [routerLink]=" ['HelloWorld'] ">Hello World</a>
+        </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
